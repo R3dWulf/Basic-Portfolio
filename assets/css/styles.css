@@ -1,6 +1,11 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
 body {
 	background-image: url("../images/naturalwhite.png");
-	margin: 0 0 0 0;
+	margin: 0 0 100px; /* bottom margin leaves room for footer*/
 }
 
 a {
@@ -41,12 +46,7 @@ a {
 	color: #777777;
 	margin-left: 50px;
 	margin-right: 25px;
-	margin-bottom: 25px;
 	margin-top: 25px;
-	border: 5px;
-	border-color: black;
-	border-color: #dddddd;
-	padding: 0px 0px 0px 0px;
 }
 
 #sidebar {
@@ -64,11 +64,20 @@ a {
 #footer {
 	background: #666666;
 	overflow: hidden; 
-	margin: 0 auto;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+
 }
 
 #content_holder {
 	padding: 20px 20px 20px 20px;
+}
+
+#content_table{
+	display: table;
+	width: 100%;
 }
 
 #button {
@@ -90,25 +99,125 @@ p {
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
+
+
+input {
+	border-radius: 8px;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+label {
+		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+		color: gray;
+}
+
 hr {
 	color: gray;
 }
 
-input {
-	border-radius: 8px;
-	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+
+.project_1{
+	position: relative;
+	background-image: url('../images/hangman.png');
+	background-size: cover;
+	width:80px;
+	height:80px;
+	text-align: center;
 }
 
-label {
-		font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-		color: gray;
-}
-
-#portfolio_lables{
+.project_1A{
+	position: absolute;
 	background-color: #4AAAA5;
 	color: white;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-	border-radius: 8px;
-/*	padding: 5px;
-	margin-top: 100px;*/
+	height:20px;
+	margin-top: 40px;
+	margin-left: -10%;
+	width: 120%;
+	border-radius: 5px;
+}
+
+.project_2{
+	position: relative;
+	background-image: url('../images/trivia.jpg');
+	background-size: cover;
+	width:80px;
+	height:80px;
+	text-align: center;
+}
+
+.project_2A{
+	position: absolute;
+	background-color: #4AAAA5;
+	color: white;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	height:20px;
+	margin-top: 40px;
+	margin-left: -10%;
+	width: 120%;
+	border-radius: 5px;
+}
+
+.project_3{
+	position: relative;
+	background-image: url('../images/controller.png');
+	background-size: cover;
+	width:80px;
+	height:80px;
+	text-align: center;
+}
+
+.project_3A{
+	position: absolute;
+	background-color: #4AAAA5;
+	color: white;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	height:20px;
+	margin-top: 40px;
+	margin-left: -10%;
+	width: 120%;
+	border-radius: 5px;
+}
+
+.project_4{
+	position: relative;
+	background-image: url('../images/widget.png');
+	background-size: cover;
+	width:80px;
+	height:80px;
+	text-align: center;
+}
+
+.project_4A{
+	position: absolute;
+	background-color: #4AAAA5;
+	color: white;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	height:20px;
+	margin-top: 40px;
+	margin-left: -10%;
+	width: 120%;
+	border-radius: 5px;
+}
+
+
+.project_5{
+	position: relative;
+	background-image: url('../images/rock_paper_scissor.png');
+	background-size: cover;
+	width:80px;
+	height:80px;
+	text-align: center;
+}
+
+.project_5A{
+	position: absolute;
+	background-color: #4AAAA5;
+	color: white;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	height:20px;
+	margin-top: 40px;
+	margin-left: -10%;
+	width: 120%;
+	border-radius: 5px;
 }
