@@ -5,13 +5,17 @@
 		<style type="text/css"></style>
 		<title>Contact Page</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+		<script type="text/javascript">
+		
+		</script>
+
 	</head>
 
 	<body>
-		<div id="top" style="float:left">
-			<table style="padding-left: 50px">
+		<div id="top" style="text-align: right">
+		<!-- 	<table style="padding-left: 50px; margin-top: 0px;">
 				<tr>
-					<th style="background-color: #4AAAA5; color: white;" height="50px">
+					<th style="background-color: #4AAAA5; color: white; margin-top: 0px;" >
 					Travis Castle
 					</th>
 
@@ -35,7 +39,15 @@
 						</table>
 					</th>
 				</tr>
-			</table>
+			</table> -->
+			<div id="logo">
+				<span style="vertical-align: middle">Travis Castle</span>
+			</div>
+		
+			<div id="navigationBar">
+				<a href="index.html">About</a> | <a href="Portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a>
+			</div>
+
 		</div>
 
 		<hr size="2" color="#cccccc" style="margin: 0 auto; float:left;">
@@ -47,32 +59,57 @@
 
 				<hr>
 	
-				<form>
+				<form method="POST" action="mailto:example@example.com" name="ContactForm" onsubmit="return validateContactForm()">
 					<fieldset>
-						<!-- <legend>Test</legend> -->
+						
 						<label>First Name:</label>
 						<br>
-						<input type="text" name="first_name" value="First Name">
+						<input type="text" name="First_Name" id="FirstName" placeholder="First Name" maxlength="20" required />
 						<br>
 						<br>
 						<label>Last Name:</label>
 						<br>
-						<input type="text" name="last_name" value="Last Name">
+						<input type="text" name="Last_Name" id="LastName" placeholder="Last Name" maxlength="20" required />
 						<br>
 						<br>
 						<label>Email:</label>
 						<br>
-						<input type="text" name="email" value="example@example.com">
+						<input type="email" name="Email" id="Email" placeholder="Email Address" maxlength="30" required>
+						<br>
+						<br>
+						<label>Phone#:</label>
+						<br>						
+						<input type="tel" placeholder="Phone#"/>
+						Home<input type="radio" name="Home" />
+						Work<input type="radio" name="Work" />
+						Cell<input type="radio" name="Cell" />
+						<br>
+						<br>
+						<label>Best Time to Call:</label> 
+						<select type="text" value="" name="select">
+							<option>
+								Morning
+							</option>
+							<option>
+								Evenings
+							</option>
+							<option>
+								Nights
+							</option>													
+						</select>	
+						Do Not Call <input type="checkbox" name="DoNotCall">
+
 						<br>
 						<br>
 						<label>Your Comments:</label>
 						<br>
-						<textarea rows="10" cols="70">Your comment's here</textarea>
+						<textarea rows="10" cols="70" name="Comments" placeholder="Your comment's here" maxlength="1000" required /></textarea>
 						<br>
-						<br>
-						
+						<br>								
+
 						<input id="button" type="submit" value="Submit" name="submit">
-						
+					
+				
 					</fieldset>
 				</form>
 			</div>
